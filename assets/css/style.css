@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+/* O asterisco *{} serve para selecionar todos os elementos do css e ajuda a zerar a formatação que vem inicialmente. */
+
+*{
+  margin: 0; /*não vai ter margem */
+  padding: 0; /* não vai ter espaçamento inicial */
+  font-family: 'Open Sans', sans-serif; /* Caso o navegador não suporte a fonte Open, o navegador pode usar a Sans*/  
+}
+
+body {
+  height: 100vh; /* para cobrir a altura da tela inteira*/ 
+  background: linear-gradient(120deg,#ffe53bd8, #ff2525da); /* Vai ter duas cores*/ 
+  display: flex;/*para alinhar os nossos elementos no centro*/ 
+  align-items: center;/*para centralizar*/
+  justify-content: center;/*para centralizar*/
+}
+
+.relogio {
+  display: flex; /* para os elementos ficar um do lado do outro*/
+  align-items: center;
+  justify-content: space-around;/*serve para dar o espaçamento entre os elementos*/
+  height: 200px;
+  width: 550px;
+  background: transparent;
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;/* serve para colocar os elementos um embaixo do outro*/
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(5,5, 5, 0.9);
+  box-shadow: 5px 5px 15px rgba(0,0,0, .7);
+  border-radius: 7px;
+  letter-spacing: 3px; /* acrescenta o espaço dos lados de cada uma das letras*/
+}
+
+.relogio span {
+  font-weight: bolder; /* engrossa a fonte*/
+  font-size: 60px;
+}
+
+.relogio span.tempo {
+  font-size: 10px;
+}
